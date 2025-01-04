@@ -4,14 +4,19 @@ print("Hello "+ nameUpper + " welcome to my game!")
 
 should_we_play = input("Do you want to play? ").lower()
 
-def firstDirection():
-    direction = input("You wanna go left or right? ").lower()
-    if direction == "right":
-        monster = input("You find the Monster. You want to fight or run? ").lower()
-        if monster == "fight":
+def monster():
+    
+    monster = input("You find the Monster. You want to fight or run? (Type fight/run) ").lower()
+    if monster == "fight":
             print("You kill the Monster! YOU WIN!!!")
-        else:
+    else:
             print("The Monster follows you and he eat you! YOU DIE!!")
+
+
+def firstDirection():
+    direction = input("You wanna go left or right? (Type left/right)").lower()
+    if direction == "right":
+        monster()
     else:
         print("You go left and finds Pedro Sanchez. END GAME!")
             
