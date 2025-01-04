@@ -4,6 +4,11 @@ print("Hello "+ nameUpper + " welcome to my game!")
 
 should_we_play = input("Do you want to play? ").lower()
 
+#Hacer lo siguiente cuando avances mas en el curso de python. Necesario recordar objetos en python
+#Crear una funcion para elegir el personaje. 3 opciones(Guerrero, Ada, Mago)
+#Crear una funcion para el combate contra el monstruo. Mediante un lanzamiento de dados
+
+
 def monster():
     
     monster = input("You find the Monster. You want to fight or run? (Type fight/run) ").lower()
