@@ -1,6 +1,8 @@
+
+
 name = input("Hey type your name: ")
 nameUpper = name.upper()
-print("Hello "+ nameUpper + " welcome to my game!")
+print  ("Hello "+ nameUpper + " welcome to my game!")
 
 should_we_play = input("Do you want to play? ").lower()
 
@@ -13,9 +15,18 @@ def monster():
     
     monster = input("You find the Monster. You want to fight or run? (Type fight/run) ").lower()
     if monster == "fight":
-            print("You kill the Monster! YOU WIN!!!")
+            print("You fight the monster and obviusly you die... Stupid...\n")
+            print("")
     else:
             print("The Monster follows you and he eat you! YOU DIE!!")
+            
+def fishing():
+    fishing = input("You find a river. You can fishing in the river. You wanto to?").lower()
+    print("")
+    if fishing == "yes":
+        print("I LOVE YOU!!. YOU GET A BIT FISH AND WIN THE GAME. YOU ARE LIKE ME!!")
+    else:
+        print("You cross the river and a water monster kills you!... Stupid...")
 
 
 def firstDirection():
@@ -23,7 +34,7 @@ def firstDirection():
     if direction == "right":
         monster()
     else:
-        print("You go left and finds Pedro Sanchez. END GAME!")
+        fishing()
             
 
 
